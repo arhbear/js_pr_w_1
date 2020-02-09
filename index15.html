@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function myFunction1(){
+                var year = prompt("Сколько вам лет, если не секрет?", "35 лет");
+                document.getElementById("text1").innerHTML = "Через 10 лет Вам исполнится " + (parseInt(year) + 10) + " лет!<br>";
+            }
+            function myFunction2(){
+                var isContinue = confirm("Начать заново");
+                if (isContinue) window.location.reload();
+            }
+                var name = prompt("Введите сюда свое имя", "Введите имя");
+                document.write("Ваше имя " + name + ". Очень рады знакомству с Вами!!!<br>");
+                document.write('<button  onclick="myFunction1()">Еще вопрос!</button><br>');
+                document.write('<p id="text1"></p>');
+                document.write('<button  onclick="isContinue = myFunction2()">Повторим?</button><br>');
+
+        </script>
+    </body>
+</html>
